@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relaytive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/anh1" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/anh2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/relaytive"
+        android:text="tổng hợp tin tứ thời sự"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtContentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/relaytive"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="tổng hợp hợp tin tức thời sự nóng hổi nhất"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+</RelativeLayout>
